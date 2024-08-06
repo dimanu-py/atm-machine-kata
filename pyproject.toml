@@ -1,0 +1,30 @@
+[project]
+name = "atm_machine"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "dimanu-py", email = "diegomtz126@gmail.com"},
+]
+dependencies = []
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.3.2",
+    "pytest-cov>=5.0.0",
+    "pytest-mock>=3.14.0",
+    "pytest-xdist>=3.6.1",
+    "doublex>=1.9.6.1",
+    "expects>=0.9.0",
+    "doublex-expects>=0.7.1",
+]
+linter = [
+    "mypy>=1.11.1",
+    "black>=24.8.0",
+]
